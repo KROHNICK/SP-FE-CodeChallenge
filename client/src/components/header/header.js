@@ -9,12 +9,13 @@ class Header extends Component {
             <div className="container">
                 <div className="top">
                 <div className="top-block">
-                    
-                    <div className="logo-block block">
+                    <div className="logo-block block left">
                         <img src={logo} className="logo" alt="logo" />
                         <h3>Sport Compass</h3>
                     </div>
 
+                   
+                    <div className="right">
                     <div className="block">
                         <p>Products</p>
                     </div>
@@ -32,7 +33,9 @@ class Header extends Component {
                         <span>
                         <i class="fas fa-shopping-cart"></i>
                         </span>
+                    </div>  
                     </div>
+                    
                     
                     
                 

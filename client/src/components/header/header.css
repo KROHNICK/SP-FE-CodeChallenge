@@ -19,19 +19,21 @@
     
 }
 
+.right {
+    display: flex;
+    flex-direction: row;
+}
+
 .block {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 15%;
     height: 50px;
     padding: 10px;
 }
 
 .logo-block {
     font-size: 23px;
-    margin-right: 50%;
-    width: 100%;
 }
 
 .logo {
@@ -43,13 +45,16 @@
 }
 
 .bot-block h1 {
+    width: 100%;
     position: absolute;
     top: 10%;
-    left: 37%;
-    color: #36549F;
+    text-align: center;
+    color: black;
     font-size: 50px;
+    margin: 10px 20px
 }
 
 .banner {
     height: 540px;
+    width: 100%;
 }
