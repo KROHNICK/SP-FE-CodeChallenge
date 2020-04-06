@@ -5,21 +5,27 @@
             "price": 40,
             "id": 1,
             "sku": 10001,
-            "description": "dri fit, breathable jacket"
+            "description": "dri fit, breathable jacket",
+            "availableSizes": ["S", "M", "L"],
+            "isFreeShipping": true
         },
         {
             "title": "Blue Shorts",
             "price": 20,
             "id": 2,
             "sku": 10002,
-            "description": "comfort fit, inner spandex"
+            "description": "comfort fit, inner spandex",
+            "availableSizes": ["S", "M", "L"],
+            "isFreeShipping": true
         },
         {
             "title": "Black Shoes",
             "price": 30,
             "id": 3,
             "sku": 10003,
-            "description": "track soles, no lace"
+            "description": "track soles, no lace",
+            "availableSizes": ["8", "9", "10"],
+            "isFreeShipping": true
         }
 
     ]
