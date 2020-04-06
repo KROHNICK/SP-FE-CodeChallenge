@@ -1,0 +1,26 @@
+{
+    "products": [
+        {
+            "title": "Blue Jacket",
+            "price": 40,
+            "id": 1,
+            "sku": 10001,
+            "description": "dri fit, breathable jacket"
+        },
+        {
+            "title": "Blue Shorts",
+            "price": 20,
+            "id": 2,
+            "sku": 10002,
+            "description": "comfort fit, inner spandex"
+        },
+        {
+            "title": "Black Shoes",
+            "price": 30,
+            "id": 3,
+            "sku": 10003,
+            "description": "track soles, no lace"
+        }
+
+    ]
+}
