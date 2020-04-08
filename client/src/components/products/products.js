@@ -2,44 +2,31 @@ import React, { Component } from "react";
 import "./products.css";
 import Product from "./product";
 import axios from "axios";
+import util from "../../util";
 
 class Products extends Component {
-    constructor() {
-        super();
-        this.state = {
-            products: []
-        };
-      }
-
-    componentDidMount() {
-        axios
-      .get("http://localhost:4000/products")
-      .then(res => {
-        console.log(res.data);
-        this.setState({ products: res.data })
-      })
-      .catch(err => {
-        console.log(err);
-      })
-    }
-
     render() {
-        console.log(this.state);
+        const productItems = this.props.products.map(p => (
+            <div className="prodCard">
+                <a href={`#${p.id}`}>
+                    <img src={`/products/${p.id}.jpg`} alt={p.title} />
+                    <p>{p.title}</p>
+                </a>
+                <div>
+                    <b>{util.formatCurrency(p.price)}</b>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+        )
+        )
+
         return (
-            <div>
-                {this.state.products.map(p => {
-                    return (
-                        <div>
-                            <Product 
-                            id={p.id}
-                            />
-                        </div>
-                    );
-                })}
+            <div className="prodBox">
+                {productItems}
             </div>
         );
     }
     
 };
 
-export default Products
+export default Products;
